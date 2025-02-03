@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBG</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img id="logo" src="./images/logo.png" alt="GBG LOGO" />
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <ul>
+            <i class="fa fa-times"></i>
+            <li><a class="active" href="index.html">მთავარი</a></li>
+            <li><a href="#">ჩვენ შესახებ</a></li>
+            <li><a href="#">გალერეა</a></li>
+            <li><a href="#">ჩვენი პროდუქცია</a></li>
+            <li><a href="#">კონტაქტი</a></li>
+          </ul>
+        </nav>
+        <div class="hide-mobile"></div>
+      </div>
+    </header>
+    <section class="banner">
+      <video autoplay muted loop id="myVideo">
+        <source src="./images/render.m4v" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="container">
+        <p>GBG კომპანიამ დიდი მასშტაბის ინვესტიციების განხორციელება დაიწყო</p>
+      </div>
+    </section>
+    <section class="about container">
+      <img src="./images/about-img.png" alt="About image" />
+      <div class="text">
+        <h2>ჩვენ შესახებ</h2>
+        <p>
+          გარდა ამისა, 2018 წლის ბოლოსთვის დასრულდება კლინკერის მშრალი წარმოების
+          ახალი ხაზის მშენებლობა კასპში. ეს პროექტი,
+        </p>
+        <button class="main-button">
+          სრულად ნახვა<i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+    </section>
+    <section class="gallery container">
+      <div class="text">
+        <h2>გალერეა</h2>
+        <p>100 მილიონი აშშ დოლარის წინასწარი საინვესტიციო ბიუჯეტით</p>
+        <p>
+          გარდა ამისა, 2018 წლის ბოლოსთვის დასრულდება კლინკერის მშრალი წარმოების
+          ახალი ხაზის მშენებლობა კასპში. ეს პროექტი,
+        </p>
+        <button class="main-button">
+          სრულად ნახვა<i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/gallery-1.png" alt="Gallery item" />
+      </div>
+
+      <div class="gallery-item item-2">
+        <img src="./images/gallery-2.png" alt="Gallery item" />
+      </div>
+      <div class="gallery-item item-3">
+        <img src="./images/gallery-3.png" alt="Gallery item" />
+      </div>
+      <div class="gallery-item item-4">
+        <img src="./images/gallery-4.png" alt="Gallery item" />
+      </div>
+    </section>
+    <section class="product container">
+      <h2>ჩვენი პროდუქცია</h2>
+      <div class="grid">
+        <div class="image">
+          <img src="./images/product.png" alt="Product Image" />
+        </div>
+        <div class="text">
+          <h3>ცემენტი</h3>
+          <p>
+            ცემენტი არის წმინდად დაფქული მინერალური ფხვნილი, ჩვეულებრივ,
+            ნაცრისფერი ფერის. მისი წარმოებისთვის ყველაზე მნიშვნელოვანი მასალაა
+            კირქვა და თიხა.
+          </p>
+          <h3>ბეტონი</h3>
+          <p>
+            აქ თქვენ იხილავთ სრულ ინფორმაციას ბეტონისა და სპეც-ბეტონის შესახებ.
+          </p>
+          <p>
+            კომპანიამ საქართველოში პირველად დანერგა ბეტონის გამათბობელი სისტემა,
+            რაც რიგ უპირატესობებს იძლევა, მათ შორის:
+          </p>
+          <button class="main-button">
+            სრულად ნახვა<i class="fa fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="contact container">
+      <h2>კონტაქტი</h2>
+      <div class="grid">
+        <div class="text">
+          <p><i class="fa fa-map-marker"></i>მისამართი</p>
+          <p><i class="fa fa-mobile"></i>+995 322 22 22 22</p>
+          <p><i class="fa fa-envelope"></i>info@saiti.ge</p>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error" id="nameError"></span>
+
+            <label for="email">ელ.ფოსტა:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error" id="emailError"></span>
+
+            <label for="message">ტექსტი:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button type="submit" class="main-button">გაგზავნა</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>© ყველა უფლება დაცულია</p>
+        <img src="./images/logo-orange.png" alt="Logo Orange" />
+        <div class="social">
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i><i class="fa fa-facebook-square"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mainpage.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/products.js"></script>
+  </body>
+</html>
